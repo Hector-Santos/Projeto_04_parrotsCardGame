@@ -1,10 +1,11 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #EEF9BF;
 }
 
-.titulo{
+.titulo {
     font-family: 'Roboto', sans-serif;
     font-size: 56px;
     font-weight: bold;
@@ -12,3 +13,33 @@ body{
     margin-top: 40px;
 }
 
+.carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    width: 117px;
+    margin-left: 0px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #99CEA8;
+    margin-left: 122px;
+    margin-right: 122px;
+
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    height: 50px;
+}
+
+.frente {
+    width: 100px;
+    height: 100px;
+}
+
+.escondido {
+    display: none;
+}
