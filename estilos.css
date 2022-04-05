@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #75B79E;
+    margin-top: 40px;
+}
+
