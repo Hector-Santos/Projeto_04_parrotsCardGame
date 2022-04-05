@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
-    width: 1100px;
+    width: 70%;
 }
 
 .frente {
@@ -40,4 +40,39 @@ body {
 
 .escondido {
     display: none;
+}
+
+@media (max-width: 629px){
+
+    .cartas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        width: 100%;
+        
+    }
+    .carta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 146px;
+        width: 117px;
+        margin-left: 37%;
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: #99CEA8;
+    }
+
+    .titulo{
+        font-size: 50px;
+        word-wrap: break-word;
+        text-align: center;
+        
+    }
+    body{
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+
 }
