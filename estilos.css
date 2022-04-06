@@ -23,6 +23,8 @@ body {
     margin-top: 50px;
     border-radius: 5px;
     background-color: #99CEA8;
+    transition: all .5s;
+    transform-style: preserve-3d;
 
 }
 
@@ -33,9 +35,18 @@ body {
     width: 70%;
 }
 
-.frente {
+.frente{
     width: 100px;
     height: 100px;
+}
+.verso{
+    width: 100px;
+    height: 100px;
+}
+
+
+.virado {
+    transform: rotateY(180deg)
 }
 
 .escondido {
