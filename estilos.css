@@ -48,6 +48,9 @@ body {
 .virado {
     transform: rotateY(180deg)
 }
+.revirado{
+        transform: rotateY(0deg)
+}
 
 .escondido {
     display: none;
