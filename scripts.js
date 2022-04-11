@@ -1,4 +1,5 @@
 let arraycompara = []
+let numerocartas
 function viracarta(elemento) {
   if (arraycompara.length < 2 && elemento.classList.contains("virado") != true) {
     elemento.classList.add("virado")
