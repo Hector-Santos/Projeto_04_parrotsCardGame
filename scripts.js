@@ -1,5 +1,7 @@
 let arraycompara = []
 let numerocartas
+let jogadas = 0
+adicionacartas()
 function viracarta(elemento) {
   if (arraycompara.length < 2 && elemento.classList.contains("virado") != true) {
     elemento.classList.add("virado")
@@ -14,13 +16,24 @@ function viracarta(elemento) {
 
     arraycompara.push(elemento)
     setTimeout(comparaCartas, 2000)
+    jogadas++
+    
+    function fimdejogo(){
+      if(document.querySelectorAll(".virado").length == numerocartas)
+    alert(`Você ganhou em ${jogadas} jogadas. `)
+    }
+
+    setTimeout(fimdejogo, 1000)
+    
   }
+  
+  
 }
 
 
 
 function adicionacartas() {
-  let numerocartas = prompt("Com quantas cartas deseja jogar? Escolha um numero par entre 4 e 14")
+  numerocartas = prompt("Com quantas cartas deseja jogar? Escolha um numero par entre 4 e 14")
   while (numerocartas < 4 || numerocartas > 14 || numerocartas % 2 !== 0)
     numerocartas = prompt("Valor invalido. Escolha um numero par entre 4 e 14")
   let array = [`<div class="carta " onclick="viracarta(this)">
@@ -89,6 +102,8 @@ function adicionacartas() {
   for (let i = 0; i < array.length; i++) {
     document.querySelector(".cartas").innerHTML += array[i];
   }
+
+  
 }
 
 function viraDevolta(elemento) {
@@ -117,4 +132,4 @@ function comparaCartas() {
 }
 
 
-adicionacartas()
+
